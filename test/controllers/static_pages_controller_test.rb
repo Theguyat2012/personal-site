@@ -18,13 +18,16 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get about_path
     assert_template 'static_pages/about'
     assert_select 'title', "#{@base_title} | About"
+    navigation_links_exist
     assert_select 'h1', 'About Me'
+    assert_select 'h2', 'My Social Media'
   end
 
   test "should get employment" do
     get employment_path
     assert_template 'static_pages/employment'
     assert_select 'title', "#{@base_title} | Employment"
+    navigation_links_exist
     assert_select 'h1', 'Employment'
   end
 
@@ -32,6 +35,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get projects_path
     assert_template 'static_pages/projects'
     assert_select 'title', "#{@base_title} | Projects"
+    navigation_links_exist
     assert_select 'h1', 'Projects'
   end
 end
