@@ -11,6 +11,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select 'title', "#{@base_title}"
     navigation_links_exist
     assert_select 'h1', 'Welcome'
+    assert_select 'h2', 'What brings you here today?'
   end
 
   test "should get about" do
