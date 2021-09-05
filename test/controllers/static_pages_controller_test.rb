@@ -25,12 +25,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', 'https://github.com/Theguyat2012'
   end
 
-  test "should get employment" do
-    get employment_path
-    assert_template 'static_pages/employment'
-    assert_select 'title', "#{@base_title} | Employment"
+  test "should get career" do
+    get career_path
+    assert_template 'static_pages/career'
+    assert_select 'title', "#{@base_title} | Career"
     navigation_links_exist
-    assert_select 'h1', 'Employment'
+    assert_select 'h1', 'Career'
   end
 
   test "should get projects" do

@@ -13,7 +13,7 @@ class ActiveSupport::TestCase
   def navigation_links_exist
     assert_select 'a[href=?]', root_path
     assert_select 'a[href=?]', about_path
-    assert_select 'a[href=?]', employment_path
+    assert_select 'a[href=?]', career_path
     assert_select 'a[href=?]', projects_path
   end
 end
