@@ -22,6 +22,21 @@
     margin: 5px;
 }
 
+.showcase-block {
+    display: inline-block;
+}
+
+.home-link:link,
+.home-link:visited,
+.home-link:hover,
+.home-link:active,
+.home-link {
+    border: 3px solid gray;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
 #whyfit-logo {
     height: 35%;
     width: 35%;
