@@ -21,6 +21,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select 'title', "#{@base_title} | About"
     navigation_links_exist
     assert_select 'h1', 'About Me'
+    assert_select 'h4.about-description'
     assert_select 'h2', 'My Social Media'
     assert_select 'a[href=?]', 'https://www.linkedin.com/in/alex-h-52923113a/'
     assert_select 'a[href=?]', 'https://github.com/Theguyat2012'

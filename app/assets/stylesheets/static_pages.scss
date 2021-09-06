@@ -7,7 +7,7 @@
 }
 
 .showcase {
-    text-align: center
+    text-align: center;
 }
 
 .showcase-description {
@@ -15,15 +15,12 @@
     text-align: left;
 }
 
-.social-media-logo {
-    height: 15%;
-    width: 15%;
-    padding: 5px;
-    margin: 5px;
-}
-
 .showcase-block {
     display: inline-block;
+}
+
+.showcase-inline {
+    display: inline;
 }
 
 .home-link:link,
@@ -37,6 +34,17 @@
 }
 .home-link:hover{
     font-size: medium;
+}
+
+.about-description {
+    line-height: 140%;
+}
+
+.social-media-logo {
+    height: 15%;
+    width: 15%;
+    padding: 5px;
+    margin: 5px;
 }
 
 #whyfit-logo {
