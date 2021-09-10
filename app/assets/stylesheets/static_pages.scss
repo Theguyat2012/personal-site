@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.home-link:link,
+.home-link:visited,
+.home-link:hover,
+.home-link {
+    border: 3px solid gray;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.home-link:hover{
+    font-size: medium;
+}
+
 .heading {
     text-align: center;
 }
@@ -23,19 +36,6 @@
     display: inline;
 }
 
-.home-link:link,
-.home-link:visited,
-.home-link:hover,
-.home-link {
-    border: 3px solid gray;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-.home-link:hover{
-    font-size: medium;
-}
-
 .about-description {
     line-height: 140%;
 }
@@ -54,6 +54,6 @@
 }
 
 #very-berry-project {
-    width:800px;
-    height:500px;
+    width: 800px;
+    height: 500px;
 }
